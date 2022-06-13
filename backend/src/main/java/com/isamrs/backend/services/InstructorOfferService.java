@@ -27,7 +27,7 @@ public class InstructorOfferService {
         return instructorOfferRepository.findById(id);
     }
 
-    public InstructorOffer addNewInstructorOffer(InstructorOffer ioff){
+    public InstructorOffer saveInstructorOffer(InstructorOffer ioff){
         return instructorOfferRepository.save(ioff);
     }
 
