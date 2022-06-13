@@ -40,7 +40,7 @@ public class User {
     private String password;
 
     @Column(nullable = false)
-    private List<Role> roles;
+    private Role role;
 
     @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "user")
     private Authority authority;
