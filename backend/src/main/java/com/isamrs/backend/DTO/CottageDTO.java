@@ -3,6 +3,11 @@ package com.isamrs.backend.DTO;
 import com.isamrs.backend.models.Cottage;
 import com.isamrs.backend.models.User;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
 public class CottageDTO {
 
     private Long id;

@@ -15,11 +15,11 @@ public class BoatService {
     @Autowired
     public BoatRepository boatRepository;
 
-    public List<Boat> getAllCottages() {
+    public List<Boat> getAllBoats() {
         return boatRepository.findAll();
     }
     
-    public Boat getCottageByName(String name){
+    public Boat getBoatByName(String name){
         return boatRepository.findBoatByName(name);
     }
 
@@ -27,7 +27,7 @@ public class BoatService {
         return boatRepository.findById(id);
     }
 
-    public Boat addNewBoat(Boat boat){
+    public Boat saveBoat(Boat boat){
         return boatRepository.save(boat);
     }
 

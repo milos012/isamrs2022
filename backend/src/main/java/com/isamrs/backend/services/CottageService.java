@@ -31,7 +31,7 @@ public class CottageService {
         return cottageRepository.findById(id);
     }
 
-    public Cottage addNewCottage(Cottage cot){
+    public Cottage saveCottage(Cottage cot){
         return cottageRepository.save(cot);
     }
 
